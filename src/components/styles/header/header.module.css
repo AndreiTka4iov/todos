@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 231px);
+    height: 100px;
+    margin-left: 231px;
+}
+
+.header .flex{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 50px;
+}
