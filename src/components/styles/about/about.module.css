@@ -1,0 +1,73 @@
+.about {
+  width: calc(100% - 10px);
+  margin-top: 20px;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  transition: 0.3s;
+}
+.about h3 {
+  color: #29A19C;
+  text-align: left;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.about p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #282846;
+  text-align: left;
+}
+.about a {
+  color: #282846;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.about a:hover {
+  color: #29A19C;
+}
+.about .social {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.about .social a {
+  font-size: 32px;
+  color: grey;
+  transition: color 0.2s;
+}
+.about .social a:hover {
+  color: #29A19C;
+}
+.about.dark {
+  background: #2C3440;
+}
+.about.dark p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #F9F9F9;
+}
+.about.dark a {
+  color: #F9F9F9;
+}
+.about.dark a:hover {
+  color: #29A19C;
+}
+.about.dark .social a {
+  color: grey;
+}
+.about.dark .social a:hover {
+  color: #29A19C;
+}
+
+@media screen and (max-width: 890px) {
+  .about {
+    width: 100%;
+  }
+}/*# sourceMappingURL=about.module.css.map */

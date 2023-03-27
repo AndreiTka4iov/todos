@@ -15,6 +15,23 @@
     height: 50px;
 }
 
+.header .flex .burger{
+    font-size: 32px;
+    color: #282846;
+    cursor: pointer;
+    transition: color .2s;
+    display: none;
+}
+
+.header.dark .flex .burger{
+    font-size: 32px;
+    color: #F9F9F9;
+}
+
+.header .flex .burger:hover{
+    color: #29A19C;
+}
+
 .header .flex .mode{
     cursor: pointer;
     color: #282846;
@@ -33,4 +50,21 @@
 
 .header .flex .modeDark:hover{
     color: #29A19C;
+}
+
+@media screen and (max-width: 1170px) {
+    .header{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header .flex .burger{
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header .flex{
+        width: 95%;
+    }
 }

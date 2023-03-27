@@ -1,0 +1,168 @@
+.screen{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+}
+
+.screen.active{
+    pointer-events: all;
+    opacity: 1;
+}
+
+.screen .make{
+    position: fixed;
+    top: calc(50% - 175px);
+    left: calc(50% - 350px);
+    background: #FFFFFF;
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; 
+}
+
+.screen .make h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #29A19C;  
+}
+
+.screen .make .content{
+   width: 100%;
+   margin-top: 20px;
+}
+
+.screen .make .content h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #282846;
+}
+
+.screen .make .content input {
+    background: transparent;
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    color: #282846;
+    margin-top: 10px;
+}
+
+
+.screen .make .content .setting {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    color: #282846;
+    gap: 10px;
+}
+
+.screen .make .content .setting .inp{
+    width: 50%;
+}
+
+.screen .make .content .setting .inp select{
+    width: 100%;
+    padding: 8px 15px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 8px;
+    color: #282846;
+    margin-top: 10px;
+}
+
+.screen .make .btn {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen .make .btn button {
+    width: 105px;
+    height: 42px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.screen .make .btn button.cancel{
+    background: #F05454;
+    border: 1px solid #F05454;
+}
+
+.screen .make .btn button.cancel:hover{
+    background: transparent;
+    color: #F05454;
+    border: 1px solid #F05454;
+}
+
+.screen .make .btn button.add{
+    background: #29A19C;
+    border: 1px solid #29A19C;
+}
+
+.screen .make .btn button.add:hover{
+    background: transparent;
+    color: #29A19C;
+    border: 1px solid #29A19C;
+}
+
+.screen.dark .make{
+    background: #2C3440;
+}
+
+.screen.dark .make .content h4 {
+    color: #F9F9F9;
+}
+
+.screen.dark .make .content input {
+    color: #F9F9F9;
+}
+
+.screen.dark .make .content .setting {
+    color: #F9F9F9;
+}
+
+.screen.dark .make .content .setting .inp select{
+    color: #F9F9F9;
+}
+
+.screen.dark .make .content .setting .inp select option{
+    color: #282846;
+}
+
+
+@media screen and (max-width: 750px) {
+    .screen .make{
+        left: 2.5%;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .screen .make .content .setting {
+       flex-direction: column;
+    }
+
+    .screen .make .content .setting .inp{
+        width: 100%;
+    }
+}

@@ -26,3 +26,20 @@
 .button:hover{
     color: #282846;
 }
+
+@media screen and (max-width: 420px) {
+    .button{
+        width: fit-content;
+        padding: 0  10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button span {
+        display: none;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+}

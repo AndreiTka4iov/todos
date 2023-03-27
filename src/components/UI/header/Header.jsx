@@ -9,8 +9,9 @@ function Header() {
   const mode = useSelector(state => state.mode.dark)
 
   return (
-    <header className={cl.header}>
+    <header className={mode ? cl.header + " " + cl.dark : cl.header}>
         <div className={cl.flex}>
+        <span className={cl.burger + " material-symbols-outlined"} onClick={() => dispatch({type: "SHOW_BURGER"})}>menu</span>
           <ButtonIcon icon={'control_point'}>Новая задача</ButtonIcon>
           {mode 
           ? <span className={cl.modeDark + " material-symbols-outlined"} onClick={() => dispatch({type: "SET_LIGHT"})}>light_mode</span>

@@ -1,5 +1,5 @@
 .navMenu{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     display: flex;
@@ -52,8 +52,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height */
-
     letter-spacing: 0.025em;
 }
 
@@ -76,4 +74,15 @@
 
 .navMenu.dark .exit:hover{
     color: #F05454;
+}
+
+@media screen and (max-width: 1170px) {
+    .navMenu{
+        left: -231px;
+        z-index: 2;
+    }
+    
+    .navMenu.show{
+        left: 0;
+    }
 }

@@ -5,6 +5,7 @@
     background: #FFFFFF;
     border-radius: 15px;
     transition: .3s;
+    text-align: center;
 
     h3{
         color: #29A19C;
@@ -24,17 +25,21 @@
 
         .item{
             text-align: center;
-            width: 100px;
             color: #282846;
             font-size: 16px;
 
             .circle{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
                 margin-top: 10px;
                 width: 100px;
                 height: 100px;
                 padding: 20px;
                 border: 2px solid #29A19C;
                 border-radius: 50%;
+
                 h3{
                     text-align: center;
                     font-size: 32px;
@@ -48,6 +53,31 @@
         .data{    
             .item{
                 color: #f9f9f9;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .success{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .success{        
+        .data{    
+            .item{
+                font-size: 12px;
+                .circle{
+                    padding: 5px;
+                    width: 50px;
+                    height: 50px;
+                    span{
+                        display: none;
+                    }
+                }
             }
         }
     }

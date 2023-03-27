@@ -11,6 +11,7 @@ import {
     Legend,
   } from 'chart.js';
   import { Line } from 'react-chartjs-2';
+import { useSelector } from 'react-redux';
 
   ChartJS.register(
     CategoryScale,
@@ -33,21 +34,28 @@ import {
   };
   
   const labels = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
-  
-  export const data = {
+
+function Chart() {
+  const todos = useSelector(state => state.todos.success)
+
+  const data = {
     labels,
     datasets: [
       {
         fill: true,
         label: 'Кол-во завершенных задач',
-        data: labels.map(() => 2),
+        data: labels.map((label) => {
+          const result = todos.filter(todo => 
+            todo.day === label
+          )
+          return result.length
+        }),
         borderColor: 'rgb(41, 161, 156)',
         backgroundColor: 'rgba(41, 161, 156, 0.5)',
       },
     ],
   };
 
-function Chart() {
   return (
     <Line options={options} data={data} />
   )

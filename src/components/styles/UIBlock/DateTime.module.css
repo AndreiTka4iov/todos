@@ -45,4 +45,24 @@
 }
 .dateTimeBlock.dark .info {
   color: #F9F9F9;
+}
+
+@media screen and (max-width: 890px) {
+  .dateTimeBlock {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dateTimeBlock .info .comp {
+    width: 50%;
+    text-align: left;
+    font-size: 14px;
+  }
+  .dateTimeBlock .info .comp .text {
+    font-size: 18px;
+  }
+  .dateTimeBlock .info .comp .text span {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=DateTime.module.css.map */

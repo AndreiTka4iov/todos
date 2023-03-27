@@ -40,3 +40,9 @@
 .userBtn:hover img{
   border-color: #29A19C;
 }
+
+@media screen and (max-width: 600px) {
+  .userBtn p{
+    display: none;
+  }
+}

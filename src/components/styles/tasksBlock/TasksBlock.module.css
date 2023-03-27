@@ -1,4 +1,9 @@
 .tasks{
     width: 50%;
-    height: 20px;
+}
+
+@media screen and (max-width: 890px) {
+    .tasks{
+        width: 100%;
+    }
 }

@@ -8,3 +8,23 @@
     width: 90%;
     margin: auto;
 }
+
+@media screen and (max-width: 1170px) {
+    .main{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 945px) {
+    .main .flexMain{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .main .flexMain{
+        flex-direction: column;
+    }
+}
