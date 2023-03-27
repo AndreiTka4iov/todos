@@ -12,28 +12,28 @@ function TodoList() {
     const [success, setSuccess] = useState([])
 
     useEffect(() => {
-        if (url.pathname === '/home'){
+        if (url.pathname === '/todos/home'){
             const result = todo.todos.filter(todo => todo.type === '1')
             setItems([...result])
 
             const success = todo.success.filter(todo => todo.type === '1')
             setSuccess([...success])
         }
-        if (url.pathname === '/family'){
+        if (url.pathname === '/todos/family'){
             const result = todo.todos.filter(todo => todo.type === '2')
             setItems([...result])
 
             const success = todo.success.filter(todo => todo.type === '2')
             setSuccess([...success])
         }
-        if (url.pathname === '/work'){
+        if (url.pathname === '/todos/work'){
             const result = todo.todos.filter(todo => todo.type === '3')
             setItems([...result])
 
             const success = todo.success.filter(todo => todo.type === '3')
             setSuccess([...success])
         }
-        if (url.pathname === '/sport'){
+        if (url.pathname === '/todos/sport'){
             const result = todo.todos.filter(todo => todo.type === '4')
             setItems([...result])
 

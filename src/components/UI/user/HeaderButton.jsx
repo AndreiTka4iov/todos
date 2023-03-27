@@ -8,7 +8,7 @@ function HeaderButton() {
   return (
     <Link to={'/todos/'} className={mode ? cl.userBtn + " " + cl.dark : cl.userBtn}>
         <p>Хорошего дня, Username</p>
-        <img src="/images/user.png" alt="" />
+        <img src="/todos/images/user.png" alt="" />
     </Link>
   )
 }

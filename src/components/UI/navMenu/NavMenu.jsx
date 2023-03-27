@@ -16,7 +16,7 @@ function NavMenu() {
                       : cl.navMenu
                   }>
         <Link to={'/todos/'} className={cl.logo} onClick={() => dispatch({type: "HIDE_BURGER"})}>
-          <img src="/images/logo.svg" alt="" />
+          <img src="/todos/images/logo.svg" alt="" />
         </Link>
         <NavBlock/>
         <Link to={'/todos/'} className={cl.exit} onClick={() => dispatch({type: "HIDE_BURGER"})}>
