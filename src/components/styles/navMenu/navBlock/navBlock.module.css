@@ -66,3 +66,19 @@
 .category .navLink.active .active{
     opacity: 1;
 }
+
+.category.dark .navLink{
+    color: #F9F9F9;
+}
+
+.category.dark .navLink:hover{
+    color: #29A19C;
+}
+
+.category.dark .navLink.add{
+    color: #29A19C;
+}
+
+.category.dark .navLink.add:hover{
+    color: #F9F9F9;
+}

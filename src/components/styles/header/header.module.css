@@ -8,7 +8,29 @@
 
 .header .flex{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
     width: 90%;
     height: 50px;
+}
+
+.header .flex .mode{
+    cursor: pointer;
+    color: #282846;
+    transition: color .2s;
+}
+
+.header .flex .modeDark{
+    cursor: pointer;
+    color: #F9F9F9;
+    transition: color .2s;
+}
+
+.header .flex .mode:hover{
+    color: #29A19C;
+}
+
+.header .flex .modeDark:hover{
+    color: #29A19C;
 }

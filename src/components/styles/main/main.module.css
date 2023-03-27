@@ -1,0 +1,10 @@
+.main{
+    width: calc(100% - 231px);
+    margin-left: 231px;
+}
+
+.main .flexMain{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}

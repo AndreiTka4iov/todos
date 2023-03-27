@@ -1,0 +1,42 @@
+.userBtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  height: 44px;
+  background: transparent;
+  color: #282846;
+  transition: color .2s;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.userBtn img{
+  width: 44px;
+  height: 44px;
+  border: 2px solid #282846;
+  border-radius: 50%;
+  padding: 2px;
+  transition: .2s;
+}
+
+.userBtn.dark img{
+  border-color: #F9F9F9;
+}
+
+.userBtn.dark {
+  color: #F9F9F9;
+}
+
+
+.userBtn:hover{
+  color: #29A19C;
+}
+
+.userBtn:hover img{
+  border-color: #29A19C;
+}

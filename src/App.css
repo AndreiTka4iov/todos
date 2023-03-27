@@ -3,4 +3,9 @@
   text-align: center;
   background: #FAFAFA;
   min-height: 100vh;
+  transition: .3s;
+}
+
+.App.dark{
+  background: #222831;
 }

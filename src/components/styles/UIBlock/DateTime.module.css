@@ -1,0 +1,48 @@
+.dateTimeBlock {
+  width: calc(100% - 10px);
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.dateTimeBlock h3 {
+  color: #29A19C;
+  text-align: left;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+}
+.dateTimeBlock .info {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #282846;
+}
+.dateTimeBlock .info .comp {
+  width: 50%;
+  text-align: left;
+  font-size: 18px;
+}
+.dateTimeBlock .info .comp .text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.dateTimeBlock .info .comp .text p {
+  margin-left: 12px;
+}
+.dateTimeBlock.dark {
+  background: #2C3440;
+}
+.dateTimeBlock.dark .info {
+  color: #F9F9F9;
+}/*# sourceMappingURL=DateTime.module.css.map */

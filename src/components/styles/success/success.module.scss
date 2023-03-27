@@ -1,0 +1,54 @@
+.success{
+    width: calc(100% - 10px);
+    margin-right: 10px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    transition: .3s;
+
+    h3{
+        color: #29A19C;
+        text-align: left;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+    }
+
+    .data{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+
+        .item{
+            text-align: center;
+            width: 100px;
+            color: #282846;
+            font-size: 16px;
+
+            .circle{
+                margin-top: 10px;
+                width: 100px;
+                height: 100px;
+                padding: 20px;
+                border: 2px solid #29A19C;
+                border-radius: 50%;
+                h3{
+                    text-align: center;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    &.dark{
+        background: #2C3440;
+        .data{    
+            .item{
+                color: #f9f9f9;
+            }
+        }
+    }
+}

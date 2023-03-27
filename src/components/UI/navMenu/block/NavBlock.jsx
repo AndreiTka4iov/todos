@@ -1,9 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import cl from '../../../styles/navMenu/navBlock/navBlock.module.css'
 function NavBlock() {
+  const mode = useSelector(state => state.mode.dark)
+
   return (
-    <div className={cl.category}>
+    <div className={mode ? cl.category + " " + cl.dark : cl.category}>
         <h3>Категории</h3>
         <NavLink to={'/home'} className={cl.navLink}>
           <i className='bx bx-home-alt'></i>
