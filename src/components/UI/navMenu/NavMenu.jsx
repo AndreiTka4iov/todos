@@ -15,11 +15,11 @@ function NavMenu() {
                     : show ? cl.navMenu + " " + cl.show
                       : cl.navMenu
                   }>
-        <Link to={'/'} className={cl.logo} onClick={() => dispatch({type: "HIDE_BURGER"})}>
+        <Link to={'/todos/'} className={cl.logo} onClick={() => dispatch({type: "HIDE_BURGER"})}>
           <img src="/images/logo.svg" alt="" />
         </Link>
         <NavBlock/>
-        <Link to={'/'} className={cl.exit} onClick={() => dispatch({type: "HIDE_BURGER"})}>
+        <Link to={'/todos/'} className={cl.exit} onClick={() => dispatch({type: "HIDE_BURGER"})}>
           <i className='bx bx-exit' ></i>
           <p>Выйти</p>
         </Link>

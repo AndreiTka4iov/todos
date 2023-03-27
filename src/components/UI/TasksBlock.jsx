@@ -10,11 +10,11 @@ function TasksBlock() {
     <div className={cl.tasks}>
         <Success/>
         <Routes>
-          <Route path='/' element={<About />}/>
-          <Route path='/home' element={<TodoList />}/>
-          <Route path='/family' element={<TodoList />}/>
-          <Route path='/work' element={<TodoList />}/>
-          <Route path='/sport' element={<TodoList />}/>
+          <Route path='/todos/' element={<About />}/>
+          <Route path='/todos/home' element={<TodoList />}/>
+          <Route path='/todos/family' element={<TodoList />}/>
+          <Route path='/todos/work' element={<TodoList />}/>
+          <Route path='/todos/sport' element={<TodoList />}/>
         </Routes>
     </div>
   )
